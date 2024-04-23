@@ -1,0 +1,181 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+:root {
+  --primary: #084b83;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 29px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  list-style-type: disc;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -0.022em;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary);
+  color: white;
+  padding: 16px 32px;
+  margin-bottom: 32px;
+}
+
+#name {
+  margin-bottom: 16px;
+}
+
+#contacts,
+#links {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: space-evenly;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+main h2 {
+  background-color: #084b83;
+  color: white;
+  padding: 8px 16px;
+  margin-left: 64px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 16px;
+  gap: 16px;
+}
+
+.experience .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.experience .header .introduction {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience .header .company_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.experience .header .introduction .company {
+  font-weight: bold;
+}
+
+.experience .header .introduction .company_location {
+  font-weight: lighter;
+}
+
+.experience .header .introduction .title {
+  font-weight: bold;
+}
+
+.experience .header .time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.experience .header .time .year {
+  font-weight: bold;
+}
+
+.experience .header .time .duration {
+  font-weight: lighter;
+}
+
+.experience .section .skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  column-gap: 8px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.experience .section .skills li:not(:last-child)::after {
+  content: ",";
+}
+
+#skills ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+  gap: 8px;
+}
